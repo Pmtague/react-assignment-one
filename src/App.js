@@ -26,9 +26,7 @@ const App = props => {
   return (
     <div className="App">
       <UserInput changed={changeHandler} user={username.users[0].username}/>
-      <UserOutput user={username.users[0].username}/>
-      <UserOutput user={username.users[1].username}/>
-      <UserOutput user={username.users[2].username}/>
+      <UserOutput user={[username.users]}/>
     </div>
   );
 }

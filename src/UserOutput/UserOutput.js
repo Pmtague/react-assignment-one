@@ -1,12 +1,16 @@
 import React from 'react';
 
 const UserOutput = ( props ) => {
-	return (
-		<div>
-			<p>{props.user}</p>
-			<p>Paragraph 2</p>
-		</div>
-	)
+	props.user.map(user => {
+		console.log(user)
+		return (
+			<div>
+				<p>{user.username}</p>
+			</div>
+		)
+		})
+	
+	
 };
 
 export default UserOutput;
